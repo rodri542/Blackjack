@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BlackJack</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center bg-yellow-500 text-3xl py-5">BlackJack</h1>
+    </header>
+    <div class="gap-4">
+        <div class="text-center flex-col justify-center ">
+            <button id="btnNuevo" class="px-5 py-2 m-2 bg-yellow-500 text-center text-xl hover:bg-yellow-800">Nuevo Juego</button>
+            <button id="btnPedir" class="px-5 py-2 m-2 bg-yellow-500 text-center text-xl hover:bg-yellow-800">Pedir Carta</button>
+            <button id="btnDetener" class="px-5 py-2 m-2 bg-yellow-500 text-center text-xl hover:bg-yellow-800">Detener</button>
+        </div>
+    </div>
+
+    <div class="flex flex-row justify-center ">
+        <div class=" flex flex-row p-10 text-center">
+            <div class=" flex flex-col">
+                <h2 class="text-6xl bg-yellow-500 p-2 rounded-xl"> Jugador - <strong>0</strong></h2>
+                <div class="flex flex-row gap-4 mt-10" id="jugador-cartas">
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" flex flex-row p-10 text-center">
+            <div class=" flex flex-col">
+                <h2 class="text-6xl bg-yellow-500 p-2 rounded-xl"> Computadora - <strong>0</strong></h2>
+                <div  class="flex flex-row gap-4 mt-10" id="computadora-cartas">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+
+body{
+    background-color: bisque;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+.carta{
+    width: 150px;
+
+}
+:hover.carta{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+#computadora-cartas, #jugador-cartas{
+    min-width: 500px;
+}
